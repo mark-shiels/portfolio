@@ -1,0 +1,288 @@
+body {
+    font-family: 'Raleway', sans-serif; /* all text on the page will be of this font */
+}
+
+section { /* each section of the page */
+    background-color: white;
+}
+
+.hero { /* top section */
+    background-color: #02050c;
+    height: 100vh;
+    color: white;
+    font-size: 40px;
+}
+
+.subpages-hero { /* top section for other pages except for the home page */
+    background-color: #02050c;
+    height: 17vh;
+    color: white;
+    font-size: 40px;
+}
+
+footer { /* footer section */
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px;
+}
+
+nav { /* navbar */
+    display: flex;
+    justify-content: space-between;
+}
+
+ul { /* unordered list in the navbar (top right) */
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-around;
+    font-size: 30px;
+}
+
+ul.show {
+    display: block; /* displays "About Me", "Projects", and "Contact Me" menu items at the top of the webpage when hamburger icon is clicked*/
+}
+
+li { /* list items in the unordered list (About Me, Projects, Contact) */
+    /* width: 200px; */
+    text-decoration: none;
+}
+
+h1 { /* my name */
+    font-size: 90px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 35px;
+    color: #00d8ae;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+p {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.subtext {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.hero-area { /* for vertically positioning the Name, Description and "About Me" button to the center*/
+    display: flex;
+    height: 100%;
+    justify-content: space-between; /* space between the three mentioned above and the socials */
+    align-items: center;
+}
+
+.hero-text { /* section containing Name, Description and "About Me" button */
+    margin-left: 80px;
+    margin-bottom: 200px;
+}
+
+.button { /* "About Me" button */
+    width: 200px;
+    height: 55px;
+    border-radius: 30px;
+    background-color: #0ead7c;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 5px;
+    margin-top: 20px;
+}
+
+
+.button:hover { /* changes the colour of the "About Me" button when hovered */
+    background-color: #258768;
+}
+
+.button:active { /* changes the colour of the "About Me" button when clicked */
+    background-color: #a9a9a9;
+    color: #808080;
+}
+
+.socials {
+    padding-bottom: 200px;
+}
+
+.logo {
+    height: 80px;
+    margin: 30px;
+}
+
+.social {
+    margin: 20px;
+}
+
+.sub-section { /* positioning the "Projects" text to the center */
+    display: flex;
+    justify-content: space-around;
+    padding: 80px;
+}
+
+.sub-section-alternative {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+
+.headshot { /* size of picture in "About Me" section */
+    width: 200px;
+    border-radius: 100px; /* makes the edges of the picture round/circular */
+}
+
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+
+.subpages-headshot-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.characterWallpaper-picture {
+    height: 700px;
+}
+
+.txtUrGrndKds-picture {
+    height: 500px;
+}
+
+.baselineLog-picture {
+    width: 1300px;
+}
+
+.baselineLog-picture1 {
+    width: 600px;
+}
+
+.baselineLog-picture2 {
+    width: 600px;
+}
+
+.coronaApocalypseWebsite-picture {
+    width: 1300px;
+}
+
+.coronaApocalypseLogo-picture {
+    width: 600px;
+    height: 600px;
+}
+
+.coronaApocalypseGame-picture {
+    width: 600px;
+    height: 600px;
+}
+
+.arHauntedHousePoster-picture {
+    height: 600px;
+}
+
+.hyperlink {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 300;
+    color: #0ead7c;
+}
+
+.softwareLogo {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    text-align: center;
+}
+
+.project-card {
+    width: 300px;
+    height: 320px;
+    box-shadow: 5px 5px 20px rgb(197, 195, 195);
+    margin: 10px;
+}
+
+.project-container {
+    display: flex; /* displays projects side by side */
+    justify-content: space-around; /* spaces the projects evenly from one another across the page */
+}
+
+@media only screen and (max-width: 1000px) {  /* repositions items when screen gets smaller/narrower */
+    .project-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.project-image { /* size and position of image on each project card */
+    margin-top: 25px;
+    width: 200px;
+    height: 200px;
+    border-radius: 0px;
+}
+
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.project-link { /* style of "View Here" text*/
+    text-decoration: none;
+    color: #0ead7c;
+}
+
+a { /* removes default style of menu options in the 'hero' section, and gives it it's own style */
+    text-decoration: none;
+    color: white;
+}
+
+.hamburger {   /* makes hambuger icon invisible when screen is bigger/wider */
+    display: none;
+}
+
+.hamburger:focus {
+    outline: 0; /* gets rid of blue outline around hamburger icon */
+}
+
+@media only screen and (max-width: 1000px) {  /* makes hambuger icon visible when screen is smaller/narrower */
+    .hamburger { /* style of hamburger icon */
+        display: block;
+        border: 0;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+        margin: 20px;
+        align-self: flex-end;
+    }
+
+    ul {
+        display: none; /* makes "About Me", "Projects", and "Contact Me" menu items at the top invisible when screen is smaller/narrower */
+        background-color: #02050c;
+        margin: 0px;
+    }
+
+    ul.show {
+        display: block;
+    }
+
+    nav {
+        display: flex; /* to display items as stacked against each other */
+        flex-direction: column-reverse;
+        background-color: #02050c;
+    }
+
+.logo {
+    display: none;
+}
+
+}
