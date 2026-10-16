@@ -1,288 +1,339 @@
-body {
-    font-family: 'Raleway', sans-serif; /* all text on the page will be of this font */
+html,
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    overflow-x:hidden;
 }
 
-section { /* each section of the page */
-    background-color: white;
+.project-showcase{
+    display:grid;
+    grid-template-columns:1.2fr 1fr;
+    gap:40px;
+    align-items:center;
+
+    background:#fff;
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+
+    max-width:1200px;
+    margin:0 auto;
 }
 
-.hero { /* top section */
-    background-color: #02050c;
-    height: 100vh;
-    color: white;
-    font-size: 40px;
+.project-image img{
+    width:100%;
+    display:block;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
-.subpages-hero { /* top section for other pages except for the home page */
-    background-color: #02050c;
-    height: 17vh;
-    color: white;
-    font-size: 40px;
+.project-details h3{
+    color:#2563eb;
+    font-size:2rem;
+    margin-bottom:20px;
 }
 
-footer { /* footer section */
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 80px;
+.project-details p{
+    margin:0;
 }
 
-nav { /* navbar */
-    display: flex;
-    justify-content: space-between;
-}
+@media(max-width:900px){
 
-ul { /* unordered list in the navbar (top right) */
-    display: flex;
-    list-style-type: none;
-    width: 500px;
-    justify-content: space-around;
-    font-size: 30px;
-}
+    .project-showcase{
+        grid-template-columns:1fr;
+    }
 
-ul.show {
-    display: block; /* displays "About Me", "Projects", and "Contact Me" menu items at the top of the webpage when hamburger icon is clicked*/
-}
-
-li { /* list items in the unordered list (About Me, Projects, Contact) */
-    /* width: 200px; */
-    text-decoration: none;
-}
-
-h1 { /* my name */
-    font-size: 90px;
-    margin: 0;
-}
-
-h2 {
-    font-size: 50px;
-}
-
-h4 {
-    font-size: 35px;
-    color: #00d8ae;
-}
-
-h5 {
-    font-size: 20px;
-}
-
-p {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 300;
-}
-
-.subtext {
-    font-size: 15px;
-    font-weight: 300;
-}
-
-.hero-area { /* for vertically positioning the Name, Description and "About Me" button to the center*/
-    display: flex;
-    height: 100%;
-    justify-content: space-between; /* space between the three mentioned above and the socials */
-    align-items: center;
-}
-
-.hero-text { /* section containing Name, Description and "About Me" button */
-    margin-left: 80px;
-    margin-bottom: 200px;
-}
-
-.button { /* "About Me" button */
-    width: 200px;
-    height: 55px;
-    border-radius: 30px;
-    background-color: #0ead7c;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 300;
-    padding-top: 5px;
-    margin-top: 20px;
-}
-
-
-.button:hover { /* changes the colour of the "About Me" button when hovered */
-    background-color: #258768;
-}
-
-.button:active { /* changes the colour of the "About Me" button when clicked */
-    background-color: #a9a9a9;
-    color: #808080;
-}
-
-.socials {
-    padding-bottom: 200px;
-}
-
-.logo {
-    height: 80px;
-    margin: 30px;
-}
-
-.social {
-    margin: 20px;
-}
-
-.sub-section { /* positioning the "Projects" text to the center */
-    display: flex;
-    justify-content: space-around;
-    padding: 80px;
-}
-
-.sub-section-alternative {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 80px;
-}
-
-.headshot { /* size of picture in "About Me" section */
-    width: 200px;
-    border-radius: 100px; /* makes the edges of the picture round/circular */
-}
-
-.headshot-container {
-    display: flex;
-    align-items: center;
-}
-
-.subpages-headshot-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.characterWallpaper-picture {
-    height: 700px;
-}
-
-.txtUrGrndKds-picture {
-    height: 500px;
-}
-
-.baselineLog-picture {
-    width: 1300px;
-}
-
-.baselineLog-picture1 {
-    width: 600px;
-}
-
-.baselineLog-picture2 {
-    width: 600px;
-}
-
-.coronaApocalypseWebsite-picture {
-    width: 1300px;
-}
-
-.coronaApocalypseLogo-picture {
-    width: 600px;
-    height: 600px;
-}
-
-.coronaApocalypseGame-picture {
-    width: 600px;
-    height: 600px;
-}
-
-.arHauntedHousePoster-picture {
-    height: 600px;
-}
-
-.hyperlink {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 300;
-    color: #0ead7c;
-}
-
-.softwareLogo {
-    height: 100px;
-    width: 100px;
-    display: flex;
-    text-align: center;
-}
-
-.project-card {
-    width: 900px;
-    height: 590px;
-    box-shadow: 5px 5px 20px rgb(197, 195, 195);
-    margin: 10px;
-}
-
-.project-container {
-    display: flex; /* displays projects side by side */
-    justify-content: space-around; /* spaces the projects evenly from one another across the page */
-}
-
-@media only screen and (max-width: 1000px) {  /* repositions items when screen gets smaller/narrower */
-    .project-container {
-        display: flex;
-        flex-wrap: wrap;
+    .project-details{
+        text-align:center;
     }
 }
 
-.project-image { /* size and position of image on each project card */
-    margin-top: 25px;
-    width: 800px;
-    height: 400px;
-    border-radius: 0px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
 }
 
-hr {
-    margin-left: 20px;
-    margin-right: 20px;
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f8fafc;
+    color:#1e293b;
+    line-height:1.7;
 }
 
-.project-link { /* style of "View Here" text*/
-    text-decoration: none;
-    color: #0ead7c;
+/* Navigation */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
-a { /* removes default style of menu options in the 'hero' section, and gives it it's own style */
-    text-decoration: none;
-    color: white;
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 30px;
 }
 
-.hamburger {   /* makes hambuger icon invisible when screen is bigger/wider */
-    display: none;
+.logo{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#2563eb;
 }
 
-.hamburger:focus {
-    outline: 0; /* gets rid of blue outline around hamburger icon */
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:25px;
 }
 
-@media only screen and (max-width: 1000px) {  /* makes hambuger icon visible when screen is smaller/narrower */
-    .hamburger { /* style of hamburger icon */
-        display: block;
-        border: 0;
-        background-color: transparent;
-        color: white;
-        font-size: 30px;
-        margin: 20px;
-        align-self: flex-end;
+.nav-links a{
+    text-decoration:none;
+    color:#334155;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active{
+    color:#2563eb;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #2563eb 0%,
+        #06b6d4 100%
+    );
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:50px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.hero h1{
+    font-size:4.5rem;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-size:2rem;
+    font-weight:400;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    opacity:0.95;
+    max-width:700px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 28px;
+    background:#f97316;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Sections */
+
+.section{
+    max-width:1200px;
+    margin:auto;
+    padding:100px 25px;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:2.5rem;
+    color:#0f172a;
+}
+
+.section p{
+    max-width:850px;
+    margin:auto;
+}
+
+/* Cards */
+
+.skills-grid,
+.education-grid,
+.interest-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(37,99,235,0.15);
+}
+
+/* Featured Project */
+
+#work .card{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+    border-top:6px solid #06b6d4;
+}
+
+#work h3{
+    color:#2563eb;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+/* Timeline */
+
+.timeline{
+    position:relative;
+    padding-left:30px;
+}
+
+.timeline::before{
+    content:'';
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#06b6d4;
+    border-radius:20px;
+}
+
+.timeline-item{
+    position:relative;
+    margin-bottom:50px;
+    padding-left:30px;
+}
+
+.timeline-item::before{
+    content:'';
+    position:absolute;
+    left:-10px;
+    top:8px;
+    width:16px;
+    height:16px;
+    background:#2563eb;
+    border-radius:50%;
+}
+
+.timeline-item h3{
+    color:#2563eb;
+    margin-bottom:5px;
+}
+
+.timeline-item span{
+    color:#64748b;
+    display:block;
+    margin-bottom:10px;
+}
+
+/* Interests */
+
+.interests i{
+    color:#f97316;
+    font-size:2.5rem;
+    margin-bottom:15px;
+}
+
+.interests .card{
+    text-align:center;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:15px 0;
+    font-size:1.1rem;
+}
+
+.contact i{
+    color:#2563eb;
+    margin-right:10px;
+}
+
+/* Footer */
+
+footer{
+    width:100%;
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin:0;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
     }
 
-    ul {
-        display: none; /* makes "About Me", "Projects", and "Contact Me" menu items at the top invisible when screen is smaller/narrower */
-        background-color: #02050c;
-        margin: 0px;
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
-    ul.show {
-        display: block;
+    .hero h1{
+        font-size:2.8rem;
     }
 
-    nav {
-        display: flex; /* to display items as stacked against each other */
-        flex-direction: column-reverse;
-        background-color: #02050c;
+    .hero h2{
+        font-size:1.3rem;
     }
 
-.logo {
-    display: none;
-}
-
+    .section h2{
+        font-size:2rem;
+    }
 }

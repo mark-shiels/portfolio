@@ -1,157 +1,303 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="src/styles.css" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- link to google fonts site -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700;800&display=swap" rel="stylesheet"> <!-- api link for Raleway font -->
-        <script src="https://kit.fontawesome.com/b964e1bead.js" crossorigin="anonymous"></script>  <!-- for hamburger icon -->
-        <title>Portfolio</title>
-        <meta charset="UTF-8" />
-    </head>
-    <body>
-        <section class="hero"> <!-- navy section of webpage -->
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Shiels | Digital Marketing, Web Design & Experience Design</title>
 
+    <link rel="stylesheet" href="src/styles.css">
 
-            <nav>
-                <div><a href="index.html"><img class="logo" src="src/images/logo.png" alt="Mark Shiels's logo"/></a></div>
-                <ul id="nav-list"> <!-- for 'navList' in app.js -->
-                    <li><a href="#about-me">About Me</a></li>  <!-- '#about-me' brings the user to the "About Me" section of the page -->
-                    <li><a href="#projects">Projects</a></li>  <!-- '#projects' brings the user to the "About Me" section of the page -->
-                    <li><a href="#contact-me">Contact</a></li> <!-- '#contact-me' brings the user to the "About Me" section of the page -->
-                </ul>
-                <button class="hamburger" id="hamburger">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
 
+<body>
 
+    <!-- Navigation -->
 
-            <div class="hero-area"> <!-- for vertically positioning the Name, Description and "About Me" button -->
-                <div class="hero-text">
-                    <h1>Mark Shiels</h1>
-                   
-                    <div class="button"><a href="#about-me">About Me</a></div> <!-- '#about-me' brings the user to the "About Me" section of the page -->
-                </div>
-                <div class="socials">
-                    <!--<div><a href="https://www.github.com" class="social">  link to github website                          
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>  embedded link for github svg logo on iconmonstr.com 
-                    </a></div>-->
-                    <div><a href="https://www.linkedin.com/in/mark-shiels-b10552214" class="social">  <!-- link to linkedin website -->                         
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="50" height="50" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg> <!-- embedded link for linkedin svg logo on iconmonstr.com -->
-                    </a></div>
-                </div>
-            </div>
-        </section>
+    <header>
+        <nav>
+            <div class="logo">Mark Shiels</div>
 
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tools">Tools</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Hero -->
 
-        <section class="sub-section" id="about-me"> <!-- "About Me" section of webpage -->      <!-- the id "about-me" is in correspondance to the '#about-me' in the hero section of the code -->
-            <div class="information">
-                <h2>About Me</h2>
-                <p>I'm a Digital Marketing Professional with experience in Paid Media, SEO search trend analysis, website content management, accessibility, and performance reporting. I enjoy combining creativity and data-driven insights to improve digital experiences and help businesses achieve measurable results.
+    <section class="hero">
+        <div class="hero-content">
 
-My work includes supporting marketing campaigns, analysing performance data, optimising website content, and developing web projects. Explore my portfolio below to see some of my recent work.</p>
-            </div>
-            <div class="headshot-container">
-                <img class="headshot" src="src/images/headshot.jpeg" alt="Mark Shiels headshot"/>
-            </div>
-        </section>
-        <section class="sub-section-alternative" id="projects">   <!-- the id "projects" is in correspondance to the '#about-me' in the hero section of the code -->
-            <h2>Projects</h2>
+            <h1>Helping Businesses Grow Online</h1>
 
+            <h2>Digital Marketing Professional</h2>
 
-            <div class="project-container">
+            <p>
+                Helping businesses build stronger online presences through
+                digital marketing, web design, graphic design,
+                website management, and user-focused digital experiences.
+            </p>
 
+            <a href="#services" class="btn">
+                Explore Services
+            </a>
 
+        </div>
+    </section>
 
-                <div class="project-card"> <!-- for each project -->
-                    <img class="project-image" src="src/images/adareGolf.png" alt="Visual Design"/>  <!-- insert project image in 'src' -->
-                    <h3>Adare Golf</h3>
-                    <!-- <p class="subtext">This is my project and some text about it. I enjoyed making this project.</p> -->
-                    <hr/>
-                    <p class="subtext"> Adare Golf is a tourism information website showcasing golf courses, accommodation, dining, and visitor attractions in Adare, Co. Limerick. The site is designed to help golfers planning a trip to the region discover everything Adare and Limerick have to offer.</p>
-                    
-                    <br>
-                        
-                       <p class="subtext"> <a class="project-link"  href="adaregolf.com">View Here</a></p> <!-- insert link to project page -->
-                </div>
+    <!-- Services -->
 
+    <section id="services" class="section">
 
+        <h2>Services</h2>
 
-                <!--
+        <div class="skills-grid">
 
-<div class="project-card">
-    <img class="project-image" src="src/images/uiuxLogo.png" alt="UI/UX"/>
-    <h3>UI/UX</h3>
-    <hr/>
-    <p class="subtext"><a class="project-link" href="uiux.html">View Here</a></p>
-</div>
+            <div class="card">
+                <h3>Digital Marketing</h3>
 
-<div class="project-card">
-    <img class="project-image" src="src/images/3dModellingLogo.png" alt="3D Modelling & Animation"/>
-    <h3>3D Modelling & Animation</h3>
-    <hr/>
-    <p class="subtext"><a class="project-link" href="3dModelling.html">View Here</a></p>
-</div>
-
-<div class="project-card">
-    <img class="project-image" src="src/images/webDesignLogo.png" alt="Web Design"/>
-    <h3>Web Design</h3>
-    <hr/>
-    <p class="subtext"><a class="project-link" href="webDesign.html">View Here</a></p>
-</div>
-
-</div>
-
-<div class="project-container">
-
-    <div class="project-card">
-        <img class="project-image" src="src/images/AppDesignLogo.png" alt="App Design"/>
-        <h3>App Design</h3>
-        <hr/>
-        <p class="subtext"><a class="project-link" href="appDesign.html">View Here</a></p>
-    </div>
-
-    <div class="project-card">
-        <img class="project-image" src="src/images/gameDevLogo.png" alt="Game Development"/>
-        <h3>Game Development</h3>
-        <hr/>
-        <p class="subtext"><a class="project-link" href="gameDevelopment.html">View Here</a></p>
-    </div>
-
-    <div class="project-card">
-        <img class="project-image" src="src/images/vrLogo.png" alt="VR & AR"/>
-        <h3>VR & AR</h3>
-        <hr/>
-        <p class="subtext"><a class="project-link" href="vr&ar.html">View Here</a></p>
-    </div>
-
-    <div class="project-card">
-        <img class="project-image" src="src/images/videoLogo.png" alt="Video"/>
-        <h3>Video</h3>
-        <hr/>
-        <p class="subtext"><a class="project-link" href="video.html">View Here</a></p>
-    </div>
-
-</div>
-
--->
-
+                <p>
+                    Digital marketing support including campaign planning,
+                    content strategy, performance reporting, and online
+                    growth initiatives.
+                </p>
             </div>
 
-        </section>
+            <!--<div class="card">
+                <h3>SEO & Search Insights</h3>
 
+                <p>
+                    Keyword research, search trend analysis, content
+                    optimisation, and SEO best practices to improve
+                    online visibility.
+                </p>
+            </div> -->
 
+            <div class="card">
+                <h3>Web Design</h3>
 
-        <footer id="contact-me">   <!-- the id "contact-me" is in correspondance to the '#about-me' in the hero section of the code -->
-            <h2>Contact Me</h2>
-            <p>mark.shiels717@gmail.com</p>
-        </footer>  
+                <p>
+                    Modern, responsive websites designed around usability,
+                    accessibility, performance, and business goals.
+                </p>
+            </div>
 
+            <!--<div class="card">
+                <h3>Website Management</h3>
 
+                <p>
+                    WordPress content management, website updates,
+                    maintenance, optimisation, and ongoing support.
+                </p>
+            </div>-->
 
-        <script src="src/app.js"></script>
-    </body>
+            <div class="card">
+                <h3>Experience Design</h3>
+
+                <p>
+                    User-centred design focused on improving usability,
+                    accessibility, navigation, and customer journeys.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Graphic & Visual Design</h3>
+
+                <p>
+                    Creation of branding assets, social media graphics,
+                    digital advertisements, website visuals, and
+                    marketing materials.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Featured Work -->
+
+    <!-- Featured Work -->
+
+<section id="work" class="section">
+
+    <h2>Featured Project</h2>
+
+    <div class="project-showcase">
+
+        <div class="project-image">
+
+            <img
+                src="src/images/adareGolf.png"
+                alt="Adare Golf Website Preview">
+
+        </div>
+
+        <div class="project-details">
+
+            <h3>Adare Golf</h3>
+
+            <p>
+                Adare Golf is a tourism information website created
+                for golfers planning a visit to Adare, Co. Limerick.
+            </p>
+
+            <br>
+
+            <p>
+                The platform showcases local golf courses,
+                accommodation, restaurants, attractions,
+                and visitor information in a clean,
+                user-friendly format.
+            </p>
+
+            <br>
+
+            <p>
+                Services delivered included website design and
+                development, search engine optimisation,
+                graphic design, content creation,
+                accessibility improvements, user experience design,
+                and ongoing website management.
+            </p>
+
+            <br>
+
+            <a href="https://adaregolf.com"
+                target="_blank"
+                class="btn">
+                Visit Adare Golf
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Why Work With Me -->
+
+    <section id="about" class="section">
+
+        <h2>Why Work With Me?</h2>
+
+        <div class="skills-grid">
+
+            <div class="card">
+                <h3>Marketing Expertise</h3>
+
+                <p>
+                    Experience supporting paid media campaigns,
+                    performance reporting,
+                    and content strategy.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>User-Focused Design</h3>
+
+                <p>
+                    Combining digital marketing knowledge with
+                    Experience Design principles to create
+                    effective online experiences.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Creative Problem Solving</h3>
+
+                <p>
+                    Balancing creativity, design thinking,
+                    and analytical insights to achieve
+                    business objectives.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Technical Knowledge</h3>
+
+                <p>
+                    Working across WordPress, HTML, CSS,
+                    accessibility, and website optimisation.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Tools -->
+
+    <section id="tools" class="section">
+
+        <h2>Tools & Technologies</h2>
+
+        <div class="skills-grid">
+
+            <div class="card">Google Analytics</div>
+            <div class="card">Google Search Console</div>
+            <div class="card">Google Ads</div>
+            <div class="card">Meta Ads Manager</div>
+            <div class="card">WordPress</div>
+            <div class="card">HTML5</div>
+            <div class="card">CSS3</div>
+            <div class="card">JavaScript</div>
+            <div class="card">Adobe Photoshop</div>
+            <div class="card">Adobe Illustrator</div>
+            <div class="card">Canva</div>
+            <div class="card">Figma</div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+
+    <section id="contact" class="section contact">
+
+        <h2>Let's Work Together</h2>
+
+        <p>
+            Looking for support with digital marketing,
+            web design, graphic design,
+            website management, or user experience improvements?
+        </p>
+
+        <br>
+
+        <p>
+            <i class="fas fa-envelope"></i>
+            mark.shiels717@gmail.com
+        </p>
+
+        <p>
+            <i class="fas fa-phone"></i>
+            085 133 5002
+        </p>
+
+        <!--<p>
+            <i class="fas fa-location-dot"></i>
+            County Limerick, Ireland
+        </p> -->
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Mark Shiels. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="src/app.js"></script>
+
+</body>
+
 </html>
