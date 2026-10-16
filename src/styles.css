@@ -206,8 +206,8 @@ p {
 }
 
 .project-card {
-    width: 300px;
-    height: 320px;
+    width: 900px;
+    height: 590px;
     box-shadow: 5px 5px 20px rgb(197, 195, 195);
     margin: 10px;
 }
@@ -226,8 +226,8 @@ p {
 
 .project-image { /* size and position of image on each project card */
     margin-top: 25px;
-    width: 200px;
-    height: 200px;
+    width: 800px;
+    height: 400px;
     border-radius: 0px;
 }
 
